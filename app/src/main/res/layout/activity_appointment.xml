@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppointmentActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/namaInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jamdr">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/keluhanInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="31dp"
+        android:hint="Keluhan"
+        app:layout_constraintBottom_toTopOf="@+id/umurInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namaInput" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/namaInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="26dp"
+        android:hint="Nama Pasien"
+        app:layout_constraintBottom_toTopOf="@+id/keluhanInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/namadr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="16dp"
+        android:text="dr. "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/profesidr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/umurInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="33dp"
+        android:hint="Umur"
+        app:layout_constraintBottom_toTopOf="@+id/appointButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keluhanInput" />
+
+    <TextView
+        android:id="@+id/jamdr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="30dp"
+        android:text="Jam Praktek"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profesidr" />
+
+    <TextView
+        android:id="@+id/profesidr"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="25dp"
+        android:text="dokter"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/jamdr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namadr" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/namadr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appiconforeground" />
+
+    <Button
+        android:id="@+id/appointButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="74dp"
+        android:text="Buat Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/umurInput" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

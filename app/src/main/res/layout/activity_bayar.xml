@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BayarActivity">
+
+    <TextView
+        android:id="@+id/pembayaranText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Pembayaran"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/obat1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="142dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Panadol,  jumlah :  "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/obat2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Paracetamol, jumlah : "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obat1text" />
+
+    <TextView
+        android:id="@+id/obat3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Intunal,  jumlah :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obat2text" />
+
+    <TextView
+        android:id="@+id/obat4text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Mylanta, jumlah : "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obat3text" />
+
+    <TextView
+        android:id="@+id/obat1jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/obat1text"
+        app:layout_constraintTop_toTopOf="@+id/obat1text" />
+
+    <TextView
+        android:id="@+id/obat2jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="3dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/obat1jumlah"
+        app:layout_constraintTop_toBottomOf="@+id/obat1jumlah" />
+
+    <TextView
+        android:id="@+id/obat3jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="1dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/obat2jumlah"
+        app:layout_constraintTop_toBottomOf="@+id/obat2jumlah" />
+
+    <TextView
+        android:id="@+id/obat4jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="0"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/obat4text"
+        app:layout_constraintTop_toBottomOf="@+id/obat3jumlah" />
+
+    <TextView
+        android:id="@+id/totalhargatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Rp. "
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obat4text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText3"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="221dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:hint="Nama"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obat2jumlah" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText4"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="73dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:hint="No. Hp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/KonfirmasiPembayaranBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textInputEditText3" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText5"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:hint="Alamat"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/KonfirmasiPembayaranBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText3" />
+
+    <Button
+        android:id="@+id/KonfirmasiPembayaranBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Konfirmasi Pemesanan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

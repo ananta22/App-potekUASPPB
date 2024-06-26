@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorPage">
+
+    <ImageView
+        android:id="@+id/gambaratas"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="658dp"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rectangle_45" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="609dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Dokter Tersedia"
+        android:textColor="#008959"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/namadr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="dr. Fatimah "
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profesidr1"
+        app:layout_constraintStart_toStartOf="@+id/profesidr1" />
+
+    <TextView
+        android:id="@+id/profesidr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Dokter Umum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/jamdr1"
+        app:layout_constraintEnd_toEndOf="@+id/jamdr1" />
+
+    <TextView
+        android:id="@+id/jamdr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="327dp"
+        android:layout_marginBottom="327dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Jam Praktek : 7.00 - 15.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/appointdr1btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Buat Appointment"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jamdr1"
+        app:layout_constraintTop_toBottomOf="@+id/jamdr1" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/namadr1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/fatimah"
+        tools:srcCompat="@drawable/fatimah" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="130dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/namadr2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appointdr1btn"
+        app:srcCompat="@drawable/tirta"
+        tools:srcCompat="@drawable/tirta" />
+
+    <TextView
+        android:id="@+id/profesidr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Dokter Anak"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/jamdr2"
+        app:layout_constraintEnd_toEndOf="@+id/namadr2" />
+
+    <TextView
+        android:id="@+id/namadr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="dr. Tirta Hafian"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/profesidr2"
+        app:layout_constraintStart_toStartOf="@+id/imageView10" />
+
+    <Button
+        android:id="@+id/appointdr2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Buat Appointment"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/jamdr2" />
+
+    <TextView
+        android:id="@+id/jamdr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/gentium_book_basic"
+        android:text="Jam Praktek : 6.00 - 16.00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/appointdr2btn"
+        app:layout_constraintStart_toEndOf="@+id/backBtn" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="6dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="profesidr1,namadr1,appointdr1btn,jamdr1"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
